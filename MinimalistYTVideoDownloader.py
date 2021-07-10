@@ -27,8 +27,6 @@ radio = Radiobutton(root, text = "720p", variable=var,
 value=2).place(relx = 0.5, rely = 0.65, anchor = "center")
 
 
-
-
 def showdetails():
     url = YouTube(str(link.get()))
     title = url.title
@@ -78,7 +76,5 @@ def downloader():
 Button(root, text = 'Download Now', command = downloader).place(
 relx = 0.5, rely=0.8, anchor = "center")
 
-
-    
 root.mainloop()
 
