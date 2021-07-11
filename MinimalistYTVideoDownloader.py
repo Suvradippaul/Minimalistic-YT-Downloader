@@ -32,8 +32,6 @@ radio = Radiobutton(root, text = "720p", variable=var, value=2).place(relx = 0.5
 def get_folderPath():
     folder_selected = filedialog.askdirectory()
     folderPath.set(folder_selected)
-    folder = folderPath.get()
-    print("The folder is ", folder)
     
 def showdetails():
     url = YouTube(str(link.get()))
