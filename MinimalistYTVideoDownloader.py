@@ -3,10 +3,12 @@ from tkinter import messagebox
 from pytube import YouTube
 from tkinter import filedialog
 from tkinter import ttk
+from pytube.cli import on_progress
 
 root = Tk()
 root.geometry('500x300')
 root.title("Minimalist Youtube Video downloader")
+
 
 link = StringVar()
 var = IntVar()
@@ -31,10 +33,6 @@ def get_folderPath():
     folder_selected = filedialog.askdirectory()
     folderPath.set(folder_selected)
     
-def do_stuff():
-    folder = folderPath.get()
-    print("The folder is ", folder)
-
 def showdetails():
     url = YouTube(str(link.get()))
     title = url.title
@@ -61,7 +59,7 @@ def showdetails():
 def download():
     global folderPath
     directory = str(folderPath.get())
-    url = YouTube(str(link.get()))
+    url = YouTube(str(link.get()), on_progress_callback=on_progress)
     choice = var.get()
     if choice == 1:
         video = url.streams.get_by_itag(18)
