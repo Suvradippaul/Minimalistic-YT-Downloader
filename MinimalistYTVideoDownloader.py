@@ -29,6 +29,8 @@ radio = Radiobutton(root, text = "360p",variable=var, value=1).place(relx = 0.5,
 
 radio = Radiobutton(root, text = "720p", variable=var, value=2).place(relx = 0.5, rely = 0.65, anchor = "center")
 
+print("========================= MinimalistYTVideoDownloader ===========================")
+
 def get_folderPath():
     folder_selected = filedialog.askdirectory()
     folderPath.set(folder_selected)
@@ -69,6 +71,7 @@ def download():
     if directory is None:
         directory = ""
     video.download(directory)
+    print("Download completed ")
     messagebox.showinfo("Information", "Your video is successfully downloaded.")
  
 def downloader():
