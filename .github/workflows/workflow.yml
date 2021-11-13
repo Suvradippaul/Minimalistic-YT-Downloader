@@ -29,7 +29,7 @@ jobs:
         run: pyinstaller MinimalistYTVideoDownloader.py --onefile --noconsole
       - name: Removing unnecessary folders
         run: |
-              rmdir build /s /q
+              rmdir build
             
       - name: Setting git config
         run: |
