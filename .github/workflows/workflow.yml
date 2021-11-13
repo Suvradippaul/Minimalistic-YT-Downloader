@@ -34,7 +34,9 @@ jobs:
       - name: Checking git status
         run: git status
       - name: Change directory to dist/
-        run: cd dist
+        run: |
+              cd dist
+              dir
       - name: Adding untracked files
         run: git add MinimalistYTVideoDownloader.exe -f
       - name: Creating a commit
