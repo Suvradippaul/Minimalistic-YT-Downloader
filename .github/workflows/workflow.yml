@@ -30,7 +30,7 @@ jobs:
       - name: Removing unnecessary folders
         run: |
               rmdir build /s /q
-              rmdir __pycache__ /s /q
+            
       - name: Setting git config
         run: |
             git config --global user.email "suvradip2000@gmail.com"
