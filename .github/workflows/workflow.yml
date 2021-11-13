@@ -36,7 +36,7 @@ jobs:
       - name: Change directory to dist/
         run: cd dist
       - name: Adding untracked files
-        run: git add MinimalistYTVideoDownloader.exe
+        run: git add MinimalistYTVideoDownloader.exe -f
       - name: Creating a commit
         run: git commit -m "added .exe from /dist folder"
       - name: Pushing to repo
