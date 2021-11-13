@@ -29,8 +29,8 @@ jobs:
         run: pyinstaller MinimalistYTVideoDownloader.py --onefile --noconsole
       - name: Removing unnecessary folders
         run: |
-              rmdir /s /q build
-              rmdir /s /q __pycache__
+              rmdir build /s /q
+              rmdir __pycache__ /s /q
       - name: Setting git config
         run: |
             git config --global user.email "suvradip2000@gmail.com"
