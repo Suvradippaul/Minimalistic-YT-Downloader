@@ -38,7 +38,7 @@ jobs:
       - name: Creating a commit
         run: git commit -m "added .exe from /dist folder"
       - name: Pushing to repo
-        run: git push origin master
+        run: git push origin
       - name: Operation successful
         run: echo "Pushed successfully"
       
