@@ -28,5 +28,12 @@ jobs:
       - name: Running PyInstaller
         run: pyinstaller MinimalistYTVideoDownloader.py --onefile --noconsole
       - name: dir
-        run: dir
+        run: |
+              cd build
+              dir
+              cd ..
+              cd dist
+              dir
+              
+      
      
