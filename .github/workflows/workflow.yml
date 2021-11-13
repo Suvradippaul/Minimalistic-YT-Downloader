@@ -27,16 +27,16 @@ jobs:
         run: pip list
       - name: Running PyInstaller
         run: pyinstaller MinimalistYTVideoDownloader.py --onefile --noconsole
-      - name: dir
-        run: dir
       - name: Setting git config
         run: |
             git config --global user.email "suvradip2000@gmail.com"
             git config --global user.name "Suvradippaul"
       - name: Checking git status
         run: git status
+      - name: Change directory to dist/
+        run: cd dist
       - name: Adding untracked files
-        run: git add /dist
+        run: git add MinimalistYTVideoDownloader.exe
       - name: Creating a commit
         run: git commit -m "added .exe from /dist folder"
       - name: Pushing to repo
