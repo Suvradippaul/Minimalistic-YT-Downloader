@@ -34,7 +34,7 @@ jobs:
       - name: Checking git status
         run: git status
       - name: Adding untracked files
-        run: git add .
+        run: git add /dist
       - name: Creating a commit
         run: git commit -m "added .exe from /dist folder"
       - name: Pushing to repo
