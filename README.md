@@ -87,10 +87,10 @@ Some additional options can be used with this
 pyinstaller command.
 You can find out about those options [here](https://www.pyinstaller.org/) 
 
-I personally perfer this command to build an exe from a python script
+I personally prefer this command to build an exe from a python script
 
 ```
-  pyinstaller <filename>.py --onefile --noconsole --icon <icon_name>.ico
+  pyinstaller <filename>.py --onefile --icon <icon_name>.ico
 ```
 ## Contributions to this project
 
