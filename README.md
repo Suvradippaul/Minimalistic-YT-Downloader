@@ -8,7 +8,7 @@ This is a GUI based lightweight YT video downloader.
 ## Tech Stack
 
 - [**Python 3.7**](https://www.python.org/downloads/release/python-378/)
-- [**Pytube v11.0.1**](https://pytube.io/en/latest/)
+- [**Pytube v11.0.2**](https://pytube.io/en/latest/)
 
 ## Pytube
 
